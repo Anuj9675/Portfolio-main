@@ -21,7 +21,7 @@ const About = () => {
             <p>
             I dive into coding adventures daily. Seeking to transform ideas into impactful online realities, I'm dedicated to mastering the craft. Let's collaborate and bring visions to life in the digital realm!
             </p>
-            <div className="">
+            <div>
               <a
                 href="../../assets/Resume.pdf"
                 className="primary-btn my-6 mr-6 inline-block"

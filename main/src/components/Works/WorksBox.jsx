@@ -28,13 +28,32 @@ const WorksBox = () => {
         {Works.map(({ id, img, title, desc, link, git }) => (
           <div
             key={id}
-            className={`bg-[url('${img}')]  border border-black rounded-lg text-black dark:text-white`}
+            className={`bg-[url('${img}')] border border-black rounded-lg text-black dark:text-white`}
           >
             
             <div className="p-3 md:p-16 backdrop-blur-sm space-y-3 rounded-xl ">
               <h1 className="text-2xl font-bold">{title}</h1>
               <p>{desc}</p>
+              <div className="flex gap-4 mt-4">
+                  <Link
+                    to={link}
+                    target="_blank"
+                    className="dark:bg-black rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
+                  >
+                    <RxExternalLink className="bg-white rounded-full border w-6 h-6 p-1" />
+                    <p className="dark:text-white">View</p>
+                  </Link>
+                  <Link
+                    to={git}
+                    target="_blank"
+                    className="dark:bg-black  rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
+                  >
+                    <AiOutlineGithub className="bg-white rounded-full border w-6 h-6 p-1" />
+                    <p className="dark:text-white">Code</p>
+                  </Link>
+                </div>
             </div>
+            
           </div>
         ))}
       </div>

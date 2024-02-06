@@ -29,7 +29,7 @@ const WorksBox = () => {
           <div
             key={id}
             className=" border border-black rounded-lg text-black dark:text-white"
-             style={{ backgroundImage: `url(${bg})` }}
+             style={{ backgroundImage: `url(${bg})` } h-max w-fit}
           >
             
             <div className="p-3 md:p-16 backdrop-blur-sm space-y-3 rounded-xl ">

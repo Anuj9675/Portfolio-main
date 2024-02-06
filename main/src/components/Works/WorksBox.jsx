@@ -20,40 +20,41 @@ const Works = [
     link: "https://animalwelfare.netlify.app/",
     git: "https://github.com/Anuj9675/Animal_Welfare.git",
   },
+ 
 ];
+
 const WorksBox = () => {
   return (
-    <section className="my-10 container ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
+    <section className="my-10 container">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {Works.map(({ id, bg, title, desc, link, git }) => (
-          <div
-            key={id}
-            className={`bg-[url('${bg}')] border border-black rounded-lg text-black dark:text-white`}
-          >
-            
-            <div className="p-3 md:p-16 backdrop-blur-sm space-y-3 rounded-xl ">
+          <div key={id} className="relative group w-full h-full">
+            <div
+              className="bg-cover bg-center border border-black rounded-lg text-black dark:text-white transition-transform duration-300 ease-in-out transform group-hover:opacity-80"
+              style={{ backgroundImage: `url(${bg})`, height: "300px" }} // Adjust the height as needed
+            ></div>
+            <div className="absolute top-0 left-0 p-3 md:p-16 backdrop-blur-sm space-y-3 rounded-xl opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
               <h1 className="text-2xl font-bold">{title}</h1>
               <p>{desc}</p>
               <div className="flex gap-4 mt-4">
-                  <Link
-                    to={link}
-                    target="_blank"
-                    className="dark:bg-black rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
-                  >
-                    <RxExternalLink className="bg-white rounded-full border w-6 h-6 p-1" />
-                    <p className="dark:text-white">View</p>
-                  </Link>
-                  <Link
-                    to={git}
-                    target="_blank"
-                    className="dark:bg-black  rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
-                  >
-                    <AiOutlineGithub className="bg-white rounded-full border w-6 h-6 p-1" />
-                    <p className="dark:text-white">Code</p>
-                  </Link>
-                </div>
+                <Link
+                  to={link}
+                  target="_blank"
+                  className="dark:bg-black rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
+                >
+                  <RxExternalLink className="bg-white rounded-full border w-6 h-6 p-1" />
+                  <p className="dark:text-white">View</p>
+                </Link>
+                <Link
+                  to={git}
+                  target="_blank"
+                  className="dark:bg-black rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
+                >
+                  <AiOutlineGithub className="bg-white rounded-full border w-6 h-6 p-1" />
+                  <p className="dark:text-white">Code</p>
+                </Link>
+              </div>
             </div>
-            
           </div>
         ))}
       </div>

@@ -28,7 +28,8 @@ const WorksBox = () => {
         {Works.map(({ id, bg, title, desc, link, git }) => (
           <div
             key={id}
-            className={`bg-[url('${bg}')] border border-black rounded-lg text-black dark:text-white`}
+            className=" border border-black rounded-lg text-black dark:text-white"
+             style={{ backgroundImage: `url(${bg})` }}
           >
             
             <div className="p-3 md:p-16 backdrop-blur-sm space-y-3 rounded-xl ">

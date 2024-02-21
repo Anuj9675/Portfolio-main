@@ -5,7 +5,7 @@ import personImg from "../../assets/person2.png";
 const Hero = () => {
   return (
     <>
-      <section className="w-full bg-secondary dark:bg-gray-900 dark:text-white">
+      <section className="w-full bg-secondary  dark:bg-black dark:text-white">
         <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[600px] space-y-4 py-12 sm:py-0 ">
           <div >
             <div className="space-y-2 grid md:justify-items-start">

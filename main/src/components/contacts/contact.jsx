@@ -4,7 +4,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-gray-100 dark:bg-gray-900">
+    <div id="contact" className="bg-gray-100  dark:bg-black dark:text-white ">
       <div className=" grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
       <div className="sm:order-2 font-bold relative">
             <div className=" text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
@@ -49,7 +49,7 @@ const Contact = () => {
 
             />
             <button
-              className="bg-orange-400 hover:bg- w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1"
+              className="bg-yellow-400 w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1"
               type="submit"
             >
               <span>Send</span>

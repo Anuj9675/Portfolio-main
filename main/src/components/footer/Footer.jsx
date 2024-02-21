@@ -5,7 +5,7 @@ import {SiGmail} from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div id="works" className=" bg-yellow-400 dark:bg-slate-800 mx-auto m-auto h-[300px] sm:h-[250px] dark:text-white ">
+    <div id="works" className=" bg-yellow-400  dark:bg-black dark:text-white  mx-auto m-auto h-[300px] sm:h-[250px]">
       <div className=" h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
         <h2 
         data-aos="zoom-out"

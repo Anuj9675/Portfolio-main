@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="home" className="bg-secondary dark:bg-gray-900">
+      <nav id="home" className="bg-secondary dark:bg-black dark:text-white">
         <div className="container flex justify-between items-center py-3 sm:py-0">
           <h1 className="text-3xl md:text-5xl font-bold text-yellow-400 flex justify-center items-center ">
             Anuj.

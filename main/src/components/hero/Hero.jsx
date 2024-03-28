@@ -18,7 +18,7 @@ const Hero = () => {
           
             <img
               src="/assets/pic.jpeg"
-              className="h-[320px] w-[320px] mx-auto backdrop-blur-sm rounded-full"
+              className="md:h-[320px] md:w-[320px] h-[200px] w-[200px] mx-auto backdrop-blur-sm rounded-full"
               alt="person"
             />
           </div>

@@ -5,6 +5,8 @@ import { BsGithub } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import AnimatedBackground from "../AnimatedBackground";
 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <>
@@ -21,15 +23,15 @@ const Hero = () => {
             />
           </div>
           <div >
-            <div className="space-y-2 grid justify-items-start">
+            <div className="space-y-2 grid justify-items-start backdrop-blur-sm">
               <p className="font-bold text-4xl">Hey!</p>
-              <p className="text-4xl font-bold text-black/80 dark:text-white">
+              <p className="text-4xl font-bold text-black/80 dark:text-white ">
                 I'm Anuj Upadhyay
               </p>
               <TypeAnimation
                 
                 sequence={[
-                  "Front-End Developer",
+                  "Frontend Developer",
                   2000,
                   "React Developer",
                   2000,
@@ -40,36 +42,36 @@ const Hero = () => {
                 repeat={Infinity}
                 className="text-sky-500 text-4xl font-bold "
               />
-              <a
+              <Link
 
-                href="https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+                to="https://www.google.com/maps/place/Dehradun,+Uttarakhand/@30.3253251,77.8523242,11z/data=!3m1!4b1!4m6!3m5!1s0x390929c356c888af:0x4c3562c032518799!8m2!3d30.3164945!4d78.0321918!16zL20vMDRiejJm?entry=ttu"
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 🗺️
                 <p className="text-lg">
                   Dehradun, India
                 </p>
-              </a>
-              <a
+              </Link>
+              <Link
                 
-                href="https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+                to=""
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 ☕
                 <p className="text-lg">
                   Fueled by coffee
                 </p>
-              </a>
-              <a
+              </Link>
+              <Link
               
-                href="https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+                to="/contact"
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 💻
                 <p className="text-lg">
                   Open to work
                 </p>
-              </a>
+              </Link>
 
             </div>
             <div className="py-6">

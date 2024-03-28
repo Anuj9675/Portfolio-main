@@ -29,6 +29,22 @@ const Works = [
     link: "https://food-anuj9675.vercel.app/",
     git: "https://github.com/Anuj9675/Food",
   },
+  {
+    id: 4,
+    image: "/assets/img4.png",
+    title: "Contact Form",
+    desc: "I created a contact form for my own use with React and Tailwindcss.",
+    link: "",
+    git: "",
+  },
+  {
+    id: 5,
+    image: "/assets/img5.png",
+    title: "Personal Portfolio",
+    desc: "My personal portfolio which shows my skills and works.",
+    link: "https://itsanuj.vercel.app/",
+    git: "https://github.com/Anuj9675/Portfolio-main",
+  },
 ];
 
 const WorksBox = () => {
@@ -36,13 +52,13 @@ const WorksBox = () => {
     <>
       <div>
         {Works.map(({ id, image, title, desc, link, git }) => (
-          <div key={id} className=" flex gap-8 p-5">
+          <div key={id} className=" flex gap-16 p-12 flex-col md:flex-row">
             <img
-              className="h-[370px] w-[670px] border border-black"
+              className="h-[320px] w-[620px] border border-black"
               src={image}
             ></img>
             <div className="flex flex-col justify-center items-start">
-              <div className="p-14">
+              <div className="p-18">
                 <h1 className="text-5xl font-bold text-black dark:text-white mb-6">{title}</h1>
                 <p className="text-black text-lg dark:text-white m-2">{desc}</p>
                 <div className="flex gap-4">

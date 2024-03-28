@@ -54,7 +54,7 @@ const WorksBox = () => {
         {Works.map(({ id, image, title, desc, link, git }) => (
           <div key={id} className=" flex gap-16 p-12 flex-col md:flex-row">
             <img
-              className="h-[320px] w-[620px] border border-black"
+              className="md:h-[320px] md:w-[620px] h-full w-full border border-black"
               src={image}
             ></img>
             <div className="flex flex-col justify-center items-start">

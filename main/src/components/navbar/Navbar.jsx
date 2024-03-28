@@ -1,122 +1,72 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu } from "react-icons/fi";
-import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
+import { Link } from "react-router-dom";
+
 const navMenus = [
   {
     name: "Home",
-    link: "/#home",
+    to: "/",
+    active: "home",
   },
   {
     name: "About",
-    link: "/#about",
+    to: "/about",
+    active: "about",
   },
   {
     name: "Works",
-    link: "/#works",
-  },
-  {
-    name: "Contact",
-    link: "/#contact",
+    to: "/works",
+    active: "works",
   },
 ];
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
-  const element = document.documentElement;
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
 
   useEffect(() => {
     if (theme === "dark") {
-      element.classList.add("dark");
+      document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
-      element.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
       localStorage.removeItem("theme");
     }
   }, [theme]);
 
   return (
     <>
-      <nav id="home" className="bg-secondary dark:bg-black dark:text-white">
-        <div className="container flex justify-between items-center py-3 sm:py-0">
-          <h1 className="text-3xl md:text-5xl font-bold text-yellow-400 flex justify-center items-center ">
-            Anuj.
-          </h1>
-          <div className="hidden sm:block">
-            <ul className="flex items-center gap-4 dark:text-white">
-              {navMenus.map((navMenu, index) => {
-                return (
-                  <li key={index}>
-                    <a
-                      className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
-                      href={navMenu.link}
-                    >
-                      {navMenu.name}
-                    </a>
-                  </li>
-                );
-              })}
-              {/* Light and dark mode switcher */}
-              {theme === "dark" ? (
-                <BiSolidSun
-                  className="text-2xl dark:text-white"
-                  onClick={() => setTheme("light")}
-                />
-              ) : (
-                <BiSolidMoon
-                  className="text-2xl dark:text-white"
-                  onClick={() => setTheme("dark")}
-                />
-              )}
-            </ul>
-          </div>
-          {/* Mobile Responsive Menu */}
-          <div className="sm:hidden">
-            <div className="flex items-center gap-4">
-              {/* Light and dark mode switcher */}
-              {theme === "dark" ? (
-                <BiSolidSun
-                  className="text-2xl dark:text-white"
-                  onClick={() => setTheme("light")}
-                />
-              ) : (
-                <BiSolidMoon
-                  className="text-2xl dark:text-white"
-                  onClick={() => setTheme("dark")}
-                />
-              )}
-              <FiMenu
-                className="text-2xl cursor-pointer dark:text-white "
-                onClick={toggleMenu}
-              />
-            </div>
-            {showMenu && (
-              <div className=" fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl left-0 w-full h-full z-10 ">
-                <ul className="flex flex-col items-center gap-4">
-                  {navMenus.map((navMenu, index) => {
-                    return (
-                      <li key={index}>
-                        <a
-                          className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
-                          href={navMenu.link}
-                          onClick={() => setShowMenu(false)}
-                        >
-                          {navMenu.name}
-                        </a>
-                        <span className="h-[1.1px] right-0 absolute w-full bg-gray-300 block"></span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+      <nav className="dark:bg-zinc-900 dark:text-white">
+        <div className="container pt-3">
+          <ul className="flex justify-center items-center dark:text-white lg:gap-32 md:gap-32 gap-12">
+            {navMenus.map((navMenu, index) => (
+              <Link key={index}>
+                <Link to={navMenu.to} className="text-xl font-semibold hover:underline underline-offset-8 decoration-sky-500 decoration-4">
+                  {navMenu.name}
+                </Link>
+              </Link>
+            ))}
+            {/* Light and dark mode switcher */}
+            {theme === "dark" ? (
+              <Link
+                className="text-2xl dark:text-white hover:-translate-y-1 transition-transform duration-300"
+                onClick={() => setTheme("light")}
+              >
+                🌕
+                </Link>
+              
+              
+            ) : (
+              <Link
+                className="text-2xl dark:text-white hover:-translate-y-1 transition-transform duration-300"
+                onClick={() => setTheme("dark")}
+                
+              >
+                🌑
+                </Link>
+              
             )}
-          </div>
+          </ul>
         </div>
       </nav>
     </>

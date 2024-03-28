@@ -1,8 +1,9 @@
 import React from "react";
+import Skills from "../skills/Skills";
 
 const About = () => {
   return (
-    <section id="about" className="bg-white   dark:bg-black dark:text-white">
+    <section className="dark:bg-zinc-900 dark:text-white">
       <div className="container md:w-[70%] sm:py-16 py-10">
         <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
           <div className=" font-bold relative">
@@ -24,14 +25,17 @@ const About = () => {
             <div>
               <a
                 href="../../assets/Resume.pdf"
-                className="text-white cursor-pointer bg-yellow-400 px-4 py-2 rounded-lg my-6 mr-6 inline-block dark:text-black"
+                className="text-white cursor-pointer font-medium bg-sky-400 px-6 py-2 rounded-lg my-6 mr-6 inline-block dark:text-black"
                 download
               >
-                Download Resume
+                Resume
               </a>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Skills/>
       </div>
     </section>
   );

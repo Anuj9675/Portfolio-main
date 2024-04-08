@@ -13,6 +13,11 @@ const navMenus = [
     active: "about",
   },
   {
+    name: "Skills",
+    to: "/skills",
+    active: "skills",
+  },
+  {
     name: "Works",
     to: "/works",
     active: "works",

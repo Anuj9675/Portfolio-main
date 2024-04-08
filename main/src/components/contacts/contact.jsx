@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
              </div>
            </div>
-            <div className="w-full p-4 lg:w-1/2 xl:w-5/12 bg-sky-600  dark:bg-zinc-800">
+            <div className="w-full p-4 lg:w-1/2 xl:w-5/12 bg-sky-600">
               <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12 dark:bg-zinc-900">
                 <form
                 method="POST"

@@ -7,7 +7,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
-    <section>
+    <section className="dark:bg-zinc-900 dark:text-white">
       <div className="container md:w-[70%] sm:py-16 py-10">
         <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
           <div className="sm:order-2 font-bold relative">

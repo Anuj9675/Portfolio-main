@@ -9,8 +9,8 @@ const Skills = () => {
   return (
     <section className="dark:bg-zinc-900 dark:text-white">
       <div className="container md:w-[70%] sm:py-16 py-10">
-        <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
-          <div className="sm:order-2 font-bold relative">
+        <div className="flex flex-col flex-wrap items-center gap-10 ">
+          <div className=" font-bold relative">
             <div className="text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
               SKILLS
             </div>
@@ -18,7 +18,7 @@ const Skills = () => {
               Skills
             </h1>
           </div>
-          <div className="flex justify-center flex-row flex-wrap p-5 gap-4">
+          <div className="flex justify-center flex-rows gap-4">
             <div className="flex flex-row flex-wrap gap-4">
               <SkillBox logo={<SiHtml5 />} skill={"HTML"} />
               <SkillBox logo={<SiCss3 />} skill={"CSS"} />

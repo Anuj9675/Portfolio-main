@@ -3,7 +3,6 @@ import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import AnimatedBackground from "../AnimatedBackground";
 
 import { Link } from "react-router-dom";
 
@@ -11,21 +10,21 @@ const Hero = () => {
   return (
     <>
       <section className="dark:bg-zinc-900 dark:text-white">
-      <AnimatedBackground/>
+      
         <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[600px] space-y-4 py-12 sm:py-0 ">
           
           <div>
           
             <img
               src="/assets/pic.jpeg"
-              className="h-[320px] w-[320px] mx-auto backdrop-blur-sm rounded-full"
+              className="h-[320px] w-[320px] mx-auto rounded-full"
               alt="person"
             />
           </div>
           <div >
-            <div className="space-y-2 grid justify-items-start backdrop-blur-sm">
-              <p className="font-bold text-4xl">Hey!</p>
-              <p className="text-4xl font-bold text-black/80 dark:text-white ">
+            <div className="space-y-2 grid justify-items-start backdrop">
+              <p className="font-bold font-mono text-3xl">Hey!✋🏻</p>
+              <p className="text-3xl font-mono font-bold text-black/80 dark:text-white ">
                 I'm Anuj Upadhyay
               </p>
               <TypeAnimation
@@ -38,9 +37,9 @@ const Hero = () => {
                   "",
                 ]}
                 speed={30}
-                wrapper="h2"
+                wrapper="h4"
                 repeat={Infinity}
-                className="text-sky-500 text-4xl font-bold "
+                className="text-sky-500 font-mono text-3xl font-bold "
               />
               <Link
 
@@ -48,7 +47,7 @@ const Hero = () => {
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 🗺️
-                <p className="text-lg">
+                <p className="text-lg font-mono">
                   Dehradun, India
                 </p>
               </Link>
@@ -58,7 +57,7 @@ const Hero = () => {
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 ☕
-                <p className="text-lg">
+                <p className="text-lg font-mono">
                   Fueled by coffee
                 </p>
               </Link>
@@ -68,7 +67,7 @@ const Hero = () => {
                 className="box text-black dark:text-white text-2xl flex items-center justify-center flex-row gap-4  hover:-translate-y-1 transition-transform duration-300 hover:text-sky-500 dark:hover:text-sky-500"
               >
                 💻
-                <p className="text-lg">
+                <p className="text-lg font-mono">
                   Open to work
                 </p>
               </Link>

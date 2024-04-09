@@ -59,8 +59,8 @@ const WorksBox = () => {
             ></img>
             <div className="flex flex-col justify-center items-start">
               <div className="p-18">
-                <h1 className="text-5xl font-bold text-black dark:text-white mb-6">{title}</h1>
-                <p className="text-black text-lg dark:text-white m-2">{desc}</p>
+                <h1 className="text-5xl font-mono font-bold text-black dark:text-white mb-6">{title}</h1>
+                <p className="text-black font-mono text-lg dark:text-white m-2">{desc}</p>
                 <div className="flex gap-4">
                   <Link
                     to={link}
@@ -68,7 +68,7 @@ const WorksBox = () => {
                     className="dark:bg-zinc-950 rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
                   >
                     <RxExternalLink className="bg-white rounded-full border w-6 h-6 p-1" />
-                    <p className="dark:text-white">View</p>
+                    <p className="dark:text-white font-mono">View</p>
                   </Link>
                   <Link
                     to={git}
@@ -76,7 +76,7 @@ const WorksBox = () => {
                     className="dark:bg-zinc-950 rounded-md shadow-md p-2 flex gap-2 items-center justify-center font-medium text-black"
                   >
                     <AiOutlineGithub className="bg-white rounded-full border w-6 h-6 p-1" />
-                    <p className="dark:text-white">Code</p>
+                    <p className="dark:text-white font-mono">Code</p>
                   </Link>
                 </div>
               </div>

@@ -4,17 +4,17 @@ const SkillBox = ({ logo, skill }) => {
   return (
     <div
       className={
-        "bg-white dark:bg-gray-700 box w-[6rem] h-[6rem] rounded-lg shadow-2xl flex flex-col items-center justify-center gap-2 p-1 sm:w-[7.2rem] sm:h-[7.2rem] exsm:w-[6.5rem] exsm:h-[6.5rem]"
+        "bg-white dark:bg-gray-700 box w-[5rem] h-[5rem] rounded-lg shadow-2xl flex flex-col items-center justify-center gap-1 p-0.5 sm:w-[6rem] sm:h-[6rem] exsm:w-[5.5rem] exsm:h-[5.5rem]"
       }
     >
       <div
         className={
-          "w-14 sm:w-12 exsm:w-10 h-14 sm:h-12 exsm:h-10 p-2 rounded-full flex items-center justify-center text-5xl sm:text-4xl exsm:text-3xl"
+          "w-10 sm:w-8 exsm:w-6 h-10 sm:h-8 exsm:h-6 p-1 rounded-full flex items-center justify-center text-4xl sm:text-3xl exsm:text-2xl"
         }
       >
         {logo}
       </div>
-      <p className="font-semibold text-sm sm:text-md exsm:text-sm">{skill}</p>
+      <p className="font-semibold text-xs sm:text-sm exsm:text-xs">{skill}</p>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import CopyEmailButton from "../components/CopyEmailButton";
+import profile from "../assets/profile.jpeg";
 import { getConfigData } from "../data/configReader";
 
 export default function About() {
@@ -19,7 +20,7 @@ export default function About() {
           <p className="text-lg text-gray-500 text-center md:text-justify font-normal tracking-tigh">
             {configData.aboutDesc}
           </p>
-          <img className="border rounded-md p-3 grayscale shadow-md" src="src/assets/profile.jpeg" alt="" />
+          <img className="border rounded-md p-3 grayscale shadow-md" src={profile} alt="https://static.vecteezy.com/system/resources/previews/004/819/327/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" />
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">

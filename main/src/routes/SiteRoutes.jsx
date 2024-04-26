@@ -8,11 +8,11 @@ import Skills from "../pages/Skills";
 export default function SiteRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/"  element={<Home />} />
+      <Route path="/about"   element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/skills" element={<Skills />} />
-      <Route path="*" element={<PageNotFound />} />
+      <Route path="*"  element={<PageNotFound />} />
     </Routes>
   );
 }

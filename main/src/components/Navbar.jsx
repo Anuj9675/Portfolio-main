@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <header className="py-2 px-2 fixed top-0 left-0 w-full z-40">
         <div className="mx-auto max-w-xl ">
-          <navbar className="backdrop-filter backdrop-blur-lg bg-white bg-opacity-40 rounded-xl flex items-center justify-between shadow-md">
+          <navbar className="backdrop-filter backdrop-blur-lg bg-white bg-opacity-40 rounded-xl flex items-center justify-evenly shadow-md">
             <div className="flex gap-x-3 px-5 py-2">
               <NavLink
                 to="/"
@@ -105,14 +105,6 @@ export default function Navbar() {
                   />
                 </svg>
               </NavLink>
-            </div>
-            <div className="justify-center">
-              <a href=""><button
-                type="button"
-                className=" before:ease relative overflow-hidden border border-[#000000] bg-gray-200 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 font-medium rounded-lg text-lg px-2 py-2 text-center inline-flex items-center mx-7"
-              >
-                💻
-              </button></a>
             </div>
           </navbar>
         </div>

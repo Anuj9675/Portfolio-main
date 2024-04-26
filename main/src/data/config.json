@@ -1,0 +1,20 @@
+{
+  "job": "Frontend Developer",
+  "name": "Anuj Upadhyay",
+  "desc": "I'm a developer with a Bachelor's degree in Computer Science.",
+  "aboutDesc": "I'm looking forward to learning more and improving skills. I dive into coding adventures daily. Seeking to transform ideas into impactful online realities, I'm dedicated to mastering the craft. Let's collaborate and bring visions to life in the digital realm!",
+  "email": "anujupadhyay6265@gmail.com",
+  "status": "on",
+  "hireMeLink": "/about",
+  
+  "social": [
+    {
+      "icon": "FaGithub",
+      "link": "https://github.com/Anuj9675"
+    },
+    {
+      "icon": "FaLinkedinIn",
+      "link": "https://www.linkedin.com/in/anuj-upadhyay-a973b0238/"
+    }
+  ]
+}

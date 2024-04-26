@@ -5,6 +5,8 @@ import Social from "./components/Social";
 import Footer from "./components/Footer";
 import SiteRoutes from "./routes/SiteRoutes";
 
+const configData = getConfigData();
+
 function App() {
 
   return (

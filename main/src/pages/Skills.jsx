@@ -1,9 +1,4 @@
 import React from "react";
-import SkillBox from "./SkillBox";
-import {
-  SiHtml5, SiReact, SiTailwindcss, SiJavascript, SiCss3, SiGithub, SiPostman, SiNodedotjs, SiMysql
-} from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -16,17 +11,39 @@ const Skills = () => {
               Skills
             </h1>
           </div>
-          <div className="flex flex-wrap justify-center items-center mx-auto gap-6 flex-row">
-            <SkillBox logo={<SiHtml5 />} skill={"HTML"} />
-            <SkillBox logo={<SiCss3 />} skill={"CSS"} />
-            <SkillBox logo={<SiReact />} skill={"REACT"} />
-            <SkillBox logo={<SiJavascript />} skill={"JAVA SCRIPT"} />
-            <SkillBox logo={<SiGithub />} skill={"GitHub"} />
-            <SkillBox logo={<SiTailwindcss />} skill={"Tailwindcss"} />
-            <SkillBox logo={<TbBrandNextjs />} skill={"NextJS"} />
-            <SkillBox logo={<SiPostman />} skill={"Postman"} />
-            <SkillBox logo={<SiNodedotjs />} skill={"Nodejs"}/>
-            <SkillBox logo={<SiMysql />} skill={"MySql"}/>
+          <div className="bg-zinc-800 text-white font-medium px-6 py-4 text-2xl rounded-md grid gap-4">
+            <div >
+            <h1 className="text-green-500">Front-end :</h1>
+            <div className="grid gap-2">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React.js</p>
+            <p>Redux</p>
+            <p>Next.js</p>
+            <p>Tailwindcss</p>
+            </div>
+            </div>
+            <div >
+            <h1 className="text-green-500">Back-end :</h1>
+            <div className="grid gap-2">
+            <p>Node.js</p>
+            <p>Firebase</p>
+            <p>MySql</p>
+            </div>
+            </div>
+            <div >
+            <h1 className="text-green-500">Devloper Tools :</h1>
+            <div className="grid gap-2 ">
+            <p>Git</p>
+            <p>Github</p>
+            <p>Redux-Toolkit</p>
+            <p>VS Code</p>
+            <p>Redux</p>
+            <p>NPM</p>
+            <p>Postman</p>
+            </div>
+            </div>
           </div>
         </div>
       </div>

@@ -40,6 +40,13 @@ const Works = [
     link: "https://itsanuj.vercel.app/",
     git: "https://github.com/Anuj9675/Portfolio-main",
   },
+  {
+    id:6,
+    title: "Meeting Scheduler",
+    desc: "Created a meeting-scheduler webapp as my final year project.",
+    link: "https://meeting-scheduler-octa.vercel.app/",
+    git: "https://github.com/Anuj9675/meeting-scheduler/",
+  },
 ];
 
 const WorksBox = () => {

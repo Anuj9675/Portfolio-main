@@ -1,7 +1,7 @@
 import React from "react";
 import SkillBox from "./SkillBox";
 import {
-  SiHtml5, SiReact, SiTailwindcss, SiJavascript, SiCss3, SiGithub, SiPostman,
+  SiHtml5, SiReact, SiTailwindcss, SiJavascript, SiCss3, SiGithub, SiPostman, SiNodedotjs, SiMysql
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -25,6 +25,8 @@ const Skills = () => {
             <SkillBox logo={<SiTailwindcss />} skill={"Tailwindcss"} />
             <SkillBox logo={<TbBrandNextjs />} skill={"NextJS"} />
             <SkillBox logo={<SiPostman />} skill={"Postman"} />
+            <SkillBox logo={<SiNodedotjs />} skill={"Nodejs"}/>
+            <SkillBox logo={<SiMysql />} skill={"MySql"}/>
           </div>
         </div>
       </div>

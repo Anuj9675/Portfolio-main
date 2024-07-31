@@ -47,6 +47,13 @@ const Works = [
     link: "https://meeting-scheduler-octa.vercel.app/",
     git: "https://github.com/Anuj9675/meeting-scheduler/",
   },
+  {
+    id:7,
+    title: "Water Conservation & Environmental Platform",
+    desc: "Created a Water Conservation & Environmental Platform for practicing MERN Stack.",
+    link: "https://water-conservation.vercel.app/",
+    git: "https://github.com/Anuj9675/Water-conservation",
+  },
 ];
 
 const WorksBox = () => {

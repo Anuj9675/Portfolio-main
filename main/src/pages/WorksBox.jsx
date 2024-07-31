@@ -63,9 +63,9 @@ const WorksBox = () => {
         {Works.map(({ id, title, desc, link, git }) => (
           <div key={id} className="p-12 ">
             
-            <div className="flex flex-col justify-center items-start">
+            <div className="flex flex-col justify-center items-start overflow-hidden">
               <div className="p-18">
-                <h1 className="text-5xl  font-bold text-black  mb-6">{title}</h1>
+                <h1 className="text-3xl font-bold text-black  mb-6">{title}</h1>
                 <p className="text-black text-lg  m-2">{desc}</p>
                 <div className="flex gap-4">
                   <Link
